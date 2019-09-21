@@ -28,6 +28,10 @@ int main()
   f2 *= 0.01;
 
   // TODO#1 add comment describing what's happening
+
+  // TODO#1 REPSONSE - d2 and f2 are being multiplied by 0.01. Beacuse d2 has
+  // more bytes with its call (Double in this case), it is more accurate than f2.
+
   std::cout << "\n**comment**" << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
@@ -36,6 +40,10 @@ int main()
   f2 *= 0.1;
 
   // TODO#2 add comment describing what's happening
+
+  // TODO#2 REPSONSE - f2 has underflowed and gone to 0. d2 on the otherhand still
+  // has room for more numbers, so it still dislpays accurate numbers.
+
   std::cout << "\n**comment**" << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
@@ -44,6 +52,11 @@ int main()
   float f3 = 3.5E38;
 
   // TODO#3 add comment describing what happened
+
+  // TODO#3 RESPONSE - d3 has just displayed the number assigned to it, but f3
+  // has overflowed, the number it was assigned to could not fit in its variable
+  // type.
+  
   std::cout << "\n**comment**" << std::endl;
   std::cout << std::setprecision(1);
   std::cout << sizeof(d3) << " bytes, value: " << d3 << std::endl;

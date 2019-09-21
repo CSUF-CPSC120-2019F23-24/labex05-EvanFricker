@@ -6,21 +6,24 @@
 
 int main()
 {
-  std:;string first_name;
-    std::cout << "Enter your first name: ";
+
+  // Getting the first name, and intials of middle and last names
+  std::string first_name;
+  std::cout << "Enter your first name: ";
   getline(std::cin, first_name);
 
   char middle_initial, last_initial;
   std::cout << "Enter the first initial of your middle name: ";
   std::cin.get(middle_initial);
+  std::cin.ignore();
 
-std::cout << "Enter the first initial of your last name: ";
+  std::cout << "Enter the first initial of your last name: ";
   last_initial = std::cin.get();
   std::cin.ignore();
 
   // create username out of user's first name and middle/last initials
-  std::string 2username = first_name+middle_initial+last_initial;
-  std::cout >> "Your user name is \"" << username << ""\n";
+  std::string username = first_name+middle_initial+last_initial;
+  std::cout << "Your user name is \"" << username << "\n";
 
   return 0;
 }

@@ -22,8 +22,8 @@ int main()
   std::cin.ignore();
 
   // create username out of user's first name and middle/last initials
-  std::string username = first_name+middle_initial+last_initial;
-  std::cout << "Your user name is \"" << username << "\n";
+  std::string username = first_name + middle_initial + last_initial;
+  std::cout << "Your user name is \"" << username << "\"" << "\n";
 
   return 0;
 }

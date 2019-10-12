@@ -11,12 +11,13 @@ int main()
 
   //Declaring my variables
   int width;
+  const int divider = 40;
 
   //Getting a random number using the time feature
   srand(time(0));
 
   //Getting a number between 1 - 39 to get our box width
-  width = rand() % 40 + 1;
+  width = rand() % divider + 1;
 
   //Displaying the box
   std::string box;
